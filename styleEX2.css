@@ -1,0 +1,36 @@
+.box {
+  margin-top: 150px;
+  margin-left: 150px;
+  padding: 120px;
+  width: 1000px;
+  height: 200px;
+  background-color: rgb(195, 128, 2);
+}
+
+.frase {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(127, 5, 5);
+  position: relative;
+  display: inline-block;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.parola-ciclica {
+  display: inline-block;
+  opacity: 0;
+  animation: animazioneCiclica 2s infinite;
+}
+
+@keyframes animazioneCiclica {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  5%,
+  35%,
+  65% {
+    opacity: 1;
+  }
+}
